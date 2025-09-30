@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="refresh" content="(time in seconds)" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>w3school JS Tutorial</title>
+        <script>
+            function myfunction() {
+                document.getElementById("dnd").innerHTML = "paragraph changed";
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="hey">Javascript Tutorial</h1>
+        <p id="dnd">JS can change html content</p>
+        <button
+            type="button"
+            onclick='document.getElementById("demo").innerHTML="Hello JS!"'
+        >
+            Click me!
+        </button>
+        <hr />
+        <button type="button" onclick="myfunction()">hey</button>
+        <button onclick="window.print()">Print this page</button>
+        <p id="one"></p>
+        <p id="demo"></p>
+
+        <button onclick="document,getElementById('time').innerHTML=Date()">
+            The time is?
+        </button>
+        <p id="time"></p>
+
+        <button onclick="this.innerHTML=Date()">show Time</button>
+
+        <p>Click the button to display date</p>
+        <button onclick="displayTime()">The time is???</button>
+        <p id="time2"></p>
+        <p id="text"></p>
+        <script>
+            let x, y, z; //statement 1 Declare 3 varialbe
+            x = 5; //statement 2 assign value 5 to x
+            y = 6; //statement 3 assign value 6 to y
+            z = x + y; //statement 4 assign sum of x & y to z
+            document.getElementById("one").innerHTML =
+                "The value of z is " + z + ".";
+            function displayTime() {
+                document.getElementById("time2").innerHTML = Date();
+            }
+
+            let text = 'ankita\'prakash"thorve';
+            document.getElementById("text").innerHTML = text;
+            let length = text.length; //to find length of the string
+        </script>
+    </body>
+</html>
