@@ -128,3 +128,57 @@ switch (x) {
     break;
 }
 console.log(light);
+
+// Boolean ----
+// true or false
+/*
+use cases
+- true or false
+- yes or no
+- on or off
+ */
+
+let f = 5;
+// console.log(f == 8);
+// console.log(f != 8);
+// console.log(f > 8);
+// console.log(f < 8);
+
+console.log(Boolean(3 > 1)); //Boolean function
+
+console.log(10 < 7);
+
+// EVERYTHING WITH A 'value' IS true -----
+console.log(`every value is TRUE`);
+console.log(Boolean(100));
+console.log(Boolean(3.14));
+console.log(Boolean(-15));
+console.log(Boolean("hello"));
+console.log(Boolean("false"));
+console.log(Boolean(1 + 7 + 3.14));
+
+// EVERYTHING WITHOUT A 'value' IS false -----
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean(false));
+console.log(Boolean(10 / "hallo"));
+
+let j = false; // Boolean
+console.log(typeof j);
+let i = new Boolean(false); // Object
+console.log(typeof i);
+
+// Logical JS ------
+
+console.log(6 < 10 && 3 > 1);
+console.log(6 > 0 || -3 > 0);
+console.log(!(5 == 8));
+
+// Nullish Coalescing Operator (??) ----
+let name = null;
+let status = "missing";
+let result = name ?? status;
+console.log(`The name is ${result}`)
