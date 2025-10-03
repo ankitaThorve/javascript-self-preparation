@@ -51,3 +51,39 @@ for (let o = 0; o < 10; o++) {
   text4 += "Number = " + o + "\n";
 }
 console.log(text4);
+
+// Continue ----
+let word = "";
+for (let i = 0; i <= 10; i++) {
+  if (i === 3) {
+    continue;
+  }
+  word += i * 10 + "\n";
+}
+console.log(word);
+
+// continue to labelname -----
+let key = "";
+// loop1: for (let u = 1; u < 5; u++) {
+//   //labelname
+//   loop2: for (let o = 1; o < 5; o++) {
+//     if (o === 3) {
+//       continue loop1;
+//     }
+//     key += o + "\n";
+//   }
+// }
+
+loop1: for (let u = 1; u < 5; u++) {
+  //labelname
+  loop2: for (let o = 1; o < 5; o++) {
+    if (o === 3) {
+      continue loop2;
+    }
+    key += o + "\n";
+  }
+}
+
+console.log(key);
+
+// break AND continue ARE THE ONLY JS STATEMENTS THAT CAN 'JUMP OUT OF' A CODE BLOCK.
