@@ -79,4 +79,32 @@ for (const x of tags) {
 html += `</ul>`;
 console.log(html);
 
+// String Methods ---
+// length --
+let word = "abcdefghijklmnopqrstuvwxyz";
+let len = word.length;
+console.log(len);
+let char = word.charAt(0);
+console.log(char);
+let charCode = word.charCodeAt(0);
+console.log(charCode);
+let letter = word.at(2);
+// let letter = word[2]
+console.log(letter);
 
+// concatinating string --
+let w1 = "hello";
+let w2 = "world!";
+let greet = w1.concat(" ", w2);
+console.log(greet);
+
+// Extracting string parts ---
+// slice(start, end)
+// substring(start, end)
+// substr(start, length)
+
+let text6 = "Apple, Banana, Kiwi";
+// let part = text6.slice(7, 13);
+// let part = text6.slice(7);
+let part = text6.slice(-12);
+console.log(part);
