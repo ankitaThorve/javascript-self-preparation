@@ -50,3 +50,33 @@ let y = new String("Ankita");
 console.log(typeof y);
 
 // Comparing two JavaScript objects always returns false.
+
+// JS String Templates ----
+// String Templates
+// Template Strings
+// Template Literals
+// Beloved child has many names
+
+// Interpolation ----
+let firstName = "Ankita";
+let lastName = "Thorve";
+let fullName = `Welcome ${firstName}, ${lastName}!`;
+console.log(fullName);
+
+// Expression Substitution ---
+let price = 10;
+let VAT = 0.25;
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+console.log(total);
+
+// HTML Templates ----
+let header = "Template String";
+let tags = ["template string", "js", "es6"];
+let html = `<h2>${header}</h2><ul>`;
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+html += `</ul>`;
+console.log(html);
+
+
