@@ -107,4 +107,67 @@ let text6 = "Apple, Banana, Kiwi";
 // let part = text6.slice(7, 13);
 // let part = text6.slice(7);
 let part = text6.slice(-12);
-console.log(part);
+let part1 = text6.substring(7, 13);
+console.log(part1);
+
+// toUpperCase --
+let part2 = text6.toUpperCase();
+console.log(part2);
+// toLower case --
+let part3 = text6.toLowerCase();
+console.log(part3);
+
+// Lone Surrogates
+// A lone surrogate is a Unicode surrogate code point that is not part of a valid surrogate pair used to represent characters in UTF-16 encoding.
+
+let result = text.isWellFormed();
+console.log(result);
+
+// trim --
+let text7 = "    Hello     world   ";
+let trim = text7.trim();
+console.log(trim);
+
+// trimStart
+// trimEnd
+
+// padStart
+let num = "8"; //text
+let padStart = num.padStart(4, "0");
+console.log(padStart);
+// padEnd
+let padEnd = num.padEnd(4, "0");
+console.log(padEnd);
+
+let numb = 6; //number
+let nStr = numb.toString();
+let pad = nStr.padStart(3, "x");
+console.log(pad);
+
+let res = text.repeat(2);
+let repeat = text.repeat(4);
+console.log(res);
+console.log(repeat);
+
+// Replacing string content ---
+let newTxt = text.replace("Doe", "Thorve");
+console.log(newTxt);
+
+let website = "Please visit MicRosOft!";
+let newWeb = website.replace(/MICROSOFT/i, "W3Schools"); //flag /iinsensitive
+console.log(newWeb);
+
+// flag /g global match
+let pets = "I love cats. Cats are very easy to love. Cats are very popular.";
+pets = pets.replaceAll("cats", "dogs");
+pets = pets.replaceAll("Cats", "Dogs");
+console.log(pets);
+
+// string split ---
+const myArr = alphabets.split("");
+alphabets = "";
+for (let i = 0; i < myArr.length; i++) {
+  alphabets += myArr[i] + "\n";
+}
+console.log(alphabets)
+
