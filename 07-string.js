@@ -169,5 +169,27 @@ alphabets = "";
 for (let i = 0; i < myArr.length; i++) {
   alphabets += myArr[i] + "\n";
 }
-console.log(alphabets)
+console.log(alphabets);
 
+// string indexOf()----
+let index = pets.indexOf("easy");
+console.log(index);
+
+let lastIndex = pets.lastIndexOf("easy");
+console.log(lastIndex);
+
+let search = pets.search("dogs");
+console.log(search);
+
+// string match()
+let spain = "The rain in SPAIN stays mainly in the plain";
+// const arr = spain.match("ain");
+// const arr = spain.match(/ain/gi);
+const arr = spain.matchAll("ain");
+console.log(Array.from(arr));
+
+// string include()
+console.log(spain.includes('rain'));
+
+// startWith()
+// endsWith()
