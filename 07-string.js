@@ -193,3 +193,15 @@ console.log(spain.includes('rain'));
 
 // startWith()
 // endsWith()
+
+
+// String Reference ---
+// Note
+// All string methods return a new value.
+
+// They do not change the original string.
+// The HTML wrapper methods are deprecated in JavaScript.
+
+// They are only standardized for compatibility purposes and are not recommended for new development.
+
+// Modern web development practices advocate for using CSS for styling and DOM manipulation to create and modify HTML elements, providing greater control and flexibility.
