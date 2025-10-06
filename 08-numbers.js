@@ -89,3 +89,9 @@ console.log(Number.MIN_SAFE_INTEGER)
 
 console.log(Number.POSITIVE_INFINITY)
 console.log(Number.NEGATIVE_INFINITY)
+
+// BigInt ---
+console.log(999999999999999n)
+let b = BigInt(12345678901234567890)
+console.log(b)
+console.log(typeof b)
