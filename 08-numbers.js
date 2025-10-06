@@ -74,5 +74,18 @@ console.log(Number.isFinite(10))
 console.log(Number.isNaN(9))
 
 console.log(Number.isSafeInteger(10))
-console.log(Number.isSafeInteger(012345678901234567890))
+console.log(Number.isSafeInteger(0))
 
+
+// Number properties ---
+console.log(Number.MAX_VALUE)
+console.log(x.MAX_VALUE)
+
+console.log(Number.MIN_VALUE)
+console.log(x.MIN_VALUE)
+
+console.log(Number.MAX_SAFE_INTEGER)
+console.log(Number.MIN_SAFE_INTEGER)
+
+console.log(Number.POSITIVE_INFINITY)
+console.log(Number.NEGATIVE_INFINITY)
