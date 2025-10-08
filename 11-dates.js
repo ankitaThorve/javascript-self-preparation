@@ -19,8 +19,12 @@ console.log(d);
 // Note --- JavaScript counts months from 0 to 11: January = 0, December = 11.
 
 // Previous Century
-const dd = new Date(99, 11, 21)
-console.log(dd)
+const dd = new Date(99, 11, 21);
+console.log(dd);
 
 // Date methods----
 // toString(), toDateString(), toUTCString(), toISOString()
+
+const date = new Date("2025-07-19");
+console.log(date);
+
