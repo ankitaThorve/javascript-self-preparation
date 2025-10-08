@@ -51,14 +51,14 @@ console.log(month);
 
 console.log(d.getDate()); //a number (1-31)
 console.log(d.getHours()); // a number (0-23)
-console.log(d.getMinutes()) // 0-59
-console.log(d.getSeconds()) // 0-59
-console.log(d.getMilliseconds()) // 0-999
-console.log(d.getDay())// 0-6
-console.log(d.getTime())
+console.log(d.getMinutes()); // 0-59
+console.log(d.getSeconds()); // 0-59
+console.log(d.getMilliseconds()); // 0-999
+console.log(d.getDay()); // 0-6
+console.log(d.getTime());
 
-let ms = Date.now()
-console.log(ms)
+let ms = Date.now();
+console.log(ms);
 
 // Calculate the number of years since January 1, 1970:
 // Calculate milliseconds in a year
@@ -69,7 +69,29 @@ const year = day * 365;
 
 // Divide Date.now() with a year
 let years = Math.round(Date.now() / year);
-console.log(years)
+console.log(years);
 
-let diff = d.getTimezoneOffset()
-console.log(diff)
+let diff = d.getTimezoneOffset();
+console.log(diff);
+
+// js set date method --
+// setFullYear()
+// setMonth()
+// setDate()
+// setHours()
+// setMinutes()
+// setSeconds()
+
+// compare dates ---
+let text = "";
+const today = new Date();
+const someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+  text = "Today is before Jan 14, 2100";
+} else {
+  text = "Today is after Jan 14, 2100";
+}
+
+console.log(text)
