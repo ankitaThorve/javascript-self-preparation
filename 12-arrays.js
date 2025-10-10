@@ -21,3 +21,8 @@ console.log(bikes);
 
 const company = new Array("google", "meta", "microsoft");
 console.log(company)
+
+// Accessing array elements ---- Array indexes start with 0.
+let carIndex = cars[0]
+console.log(`The first car is '${carIndex}'`)
+
