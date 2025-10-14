@@ -63,3 +63,22 @@ const points = new Array(40, 100, 420);
 // const point = [60]
 const point = new Array(60);
 console.log(point[0]);
+
+// Array Methods ----
+let size = fruits.length;
+console.log(size);
+
+fruits.length = 5; //set length to array
+console.log(fruits.toString());
+
+let sec = fruits.at(2); //return indexed element | same as []
+console.log(sec);
+
+let join = fruits.join(" * "); //like toString(), but specify the separator
+console.log(join);
+
+console.log(fruits.pop()); //removes last element and returns the value that was "popped out"
+
+let leng = fruits.push("Kiwi");
+console.log(leng);
+console.log(fruits);
