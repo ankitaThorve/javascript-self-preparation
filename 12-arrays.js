@@ -82,3 +82,6 @@ console.log(fruits.pop()); //removes last element and returns the value that was
 let leng = fruits.push("Kiwi");
 console.log(leng);
 console.log(fruits);
+
+// restarted 01.11.2025
+
