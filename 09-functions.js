@@ -88,3 +88,37 @@ function sumAll() {
   return sum;
 }
 console.log(sumAll(2, 45, 61, 78, 109));
+
+// Arrow functions ---
+arrowFunc = (a, b) => a * b;
+let result1 = arrowFunc(2, 3);
+console.log(`The multiplication is: ${result1}.`);
+
+// before arrow ---
+let arrF1 = function (x, y) {
+  return x * y;
+};
+let res1 = arrF1(1, 2);
+console.log(`Using before arrow func: ${res1}`);
+
+// with arrow function ----
+let arrF2 = (o, p) => o * p;
+let res2 = arrF2(1, 2);
+console.log(`Using with arrow func: ${res2}`);
+
+// Another before arrow func ---
+let hello = function () {
+  return "Hello World!!";
+};
+console.log(hello());
+
+// Another with arrow func ---
+let hello2 = () => {
+  return "Hello World with arrow function!!";
+};
+console.log(hello2());
+
+// Arrow Functions Return Value by Default ---- This works only if the function has only one statement.
+let hello3 = () => "Hello world with return value by default";
+console.log(hello3());
+
