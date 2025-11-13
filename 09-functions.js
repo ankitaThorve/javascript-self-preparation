@@ -38,13 +38,20 @@ function myFunction() {
 // code here can NOT use carName
 
 // Parameters vs Arguments ---
-function greet(name, age){ //parameters
-  return `hello ${name}!, You are ${age} years old. `
+function greet(name, age) {
+  //parameters
+  return `hello ${name}!, You are ${age} years old. `;
 }
 
-let welcome= greet('ankita', 16) //arguments
-console.log(welcome)
+let welcome = greet("ankita", 16); //arguments
+console.log(welcome);
 
 // Functions used as Variables ---
-let temp = "The temperaturesis "+ value + " Celsius."
-console.log(temp)
+let temp = "The temperaturesis " + value + " Celsius.";
+console.log(temp);
+
+// Default parameter values --
+function dePara(x, y = 10) {
+  return x + y;
+}
+console.log(dePara(5));
