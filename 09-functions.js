@@ -55,3 +55,36 @@ function dePara(x, y = 10) {
   return x + y;
 }
 console.log(dePara(5));
+
+// Rest Parameter (...)---
+function sum(...args) {
+  let sum = 0;
+  for (let arg of args) sum += arg;
+  return sum;
+}
+
+let x = sum(4, 9, 24.46, 87, 101);
+console.log(x);
+
+// find largest number ---
+function findMax() {
+  let max = -Infinity;
+  for (let i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+}
+
+console.log(findMax(5, 6, 7, 10, 4, 67));
+
+// sum all input values ---
+function sumAll() {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+console.log(sumAll(2, 45, 61, 78, 109));
