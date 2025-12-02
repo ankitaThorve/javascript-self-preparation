@@ -107,11 +107,54 @@ console.log(fruits.pop()); //removes last element and returns the value that was
 let leng = fruits.push("Kiwi");
 console.log(leng);
 // console.log(fruits);
-
 // restarted 01.11.2025
-
 // back on 13.11.2025
-
 // same on 28.11.2025
-
 // 01.12.2025
+fruits.shift(); //removes the first array element and "shifts" all other elements to a lower index
+console.log(fruits);
+
+let fShift = fruits.shift(); // returns the value that was "shifted out"
+console.log(fShift);
+
+fruits.unshift("guava"); //adds a new element to an array (at the beginning), and "unshifts" older elements
+console.log(fruits.unshift("guava")); //returns the new array length
+
+// Array length ---
+fruits[fruits.length] = "grapes";
+console.log(fruits);
+
+delete fruits[0]; //Using delete() leaves undefined holes in the array
+console.log(fruits[0]);
+
+// Merging Arrays (Concatenating) -----
+
+const myGirl = ["Hema", "Ankita", "Mudra"];
+const myBoy = ["Shubham", "Tushar", "Mahesh"];
+const myChildren = myGirl.concat(myBoy);
+console.log(myChildren);
+
+// The concat() method does not change the existing arrays. It always returns a new array.
+// The concat() method can take any number of array arguments.
+
+const allBoys = myBoy.concat("Rugwed");
+console.log(allBoys);
+
+console.log(fruits.copyWithin(1, 0)); //copies array elements to another position in an array
+
+// Note
+// The copyWithin() method overwrites the existing values.
+// The copyWithin() method does not add items to the array.
+// The copyWithin() method does not change the length of the array.
+
+const myArr = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
+const newArr = myArr.flat(); //creates a new array with sub-array elements concatenated to a specified depth
+console.log(newArr);
+
+const newArr1 = newArr.flatMap((x) => [x * 10]); //first maps all elements of an array and then creates a new array by flattening the array
+console.log(newArr1);
+
