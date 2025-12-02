@@ -124,7 +124,7 @@ console.log(fruits.unshift("guava")); //returns the new array length
 fruits[fruits.length] = "grapes";
 console.log(fruits);
 
-delete fruits[0]; //Using delete() leaves undefined holes in the array
+// delete fruits[0]; //Using delete() leaves undefined holes in the array
 console.log(fruits[0]);
 
 // Merging Arrays (Concatenating) -----
@@ -140,7 +140,7 @@ console.log(myChildren);
 const allBoys = myBoy.concat("Rugwed");
 console.log(allBoys);
 
-console.log(fruits.copyWithin(1, 0)); //copies array elements to another position in an array
+// console.log(fruits.copyWithin(1, 0)); //copies array elements to another position in an array
 
 // Note
 // The copyWithin() method overwrites the existing values.
@@ -158,3 +158,28 @@ console.log(newArr);
 const newArr1 = newArr.flatMap((x) => [x * 10]); //first maps all elements of an array and then creates a new array by flattening the array
 console.log(newArr1);
 
+// Splicing and Slicing Arrays -------
+fruits.splice(2, 0, "lemon", "kiwi"); //adds new items to an array
+console.log(fruits);
+const removed = fruits.splice(2, 2, "lemon", "kiwi");
+console.log(removed);
+
+fruits.splice(2, 0);
+console.log(fruits);
+
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const spliced = months.toSpliced(0, 1);
+console.log(spliced);
+
+const oneM = months.slice(1); //slices out a piece of an array into a new array
+console.log(oneM);
+
+const citrus = fruits.slice(1, 5); //selects elements from the start argument, and up to (but not including) the end argument
+console.log(citrus);
+
+const rest = fruits.slice(3); //slices out the rest of the array
+console.log(rest);
+
+// Automatic toString() ----
+const myList = fruits.toString();
+console.log(myList);
