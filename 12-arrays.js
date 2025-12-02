@@ -19,7 +19,7 @@ bikes[2] = "royal enfield";
 
 console.log(bikes);
 
-const company = new Array("google", "meta", "microsoft");
+const company = new Array("google", "meta", "microsoft"); //using js new keyword
 console.log(company);
 
 // Accessing array elements ---- Array indexes start with 0.
@@ -64,6 +64,31 @@ const points = new Array(40, 100, 420);
 const point = new Array(60);
 console.log(point[0]);
 
+// How to Recognize an Array
+console.log(Array.isArray(point)); //Array.isArray()
+console.log(fruits instanceof Array); // instanceof operator
+
+// Nested Arrays and Objects ------
+let x = "";
+const myObj = {
+  name: "John",
+  age: 30,
+  cars: [
+    { name: "Ford", models: ["Fiesta", "Focus", "Mustang"] },
+    { name: "BMW", models: ["320", "X3", "X5"] },
+    { name: "Fiat", models: ["500", "Panda"] },
+  ],
+};
+
+for (let i in myObj.cars) {
+  x += "<h2>" + myObj.cars[i].name + "</h2>";
+  for (let j in myObj.cars[i].models) {
+    x += myObj.cars[i].models[j] + "<br>";
+  }
+}
+
+// console.log(x);
+
 // Array Methods ----
 let size = fruits.length;
 console.log(size);
@@ -81,10 +106,12 @@ console.log(fruits.pop()); //removes last element and returns the value that was
 
 let leng = fruits.push("Kiwi");
 console.log(leng);
-console.log(fruits);
+// console.log(fruits);
 
 // restarted 01.11.2025
 
 // back on 13.11.2025
 
 // same on 28.11.2025
+
+// 01.12.2025
