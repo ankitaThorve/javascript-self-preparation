@@ -237,3 +237,11 @@ const veggies = ["spinach","coriander","bringal","potato","capsicum"]
 veggies.sort() // First sort the array
 veggies.reverse() // Then reverse it
 console.log(`First sort then reverse: ${veggies}`)
+
+// toSorted() method as a safe way to sort an array without altering the original array
+const sortedMonths = months.toSorted()
+console.log(`Months sorted alphabetically: ${sortedMonths}`)
+
+// toReversed() method as a safe way to reverse an array without altering the original array
+const reversedMonths = months.toReversed()
+console.log(`Months reversed: ${reversedMonths}`)
