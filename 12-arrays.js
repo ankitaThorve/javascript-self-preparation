@@ -233,15 +233,34 @@ frtPlate.reverse();
 console.log(`Reverse arrays: ${frtPlate}`);
 
 // By combining sort() and reverse(),can sort an array in descending order
-const veggies = ["spinach","coriander","bringal","potato","capsicum"]
-veggies.sort() // First sort the array
-veggies.reverse() // Then reverse it
-console.log(`First sort then reverse: ${veggies}`)
+const veggies = ["spinach", "coriander", "bringal", "potato", "capsicum"];
+veggies.sort(); // First sort the array
+veggies.reverse(); // Then reverse it
+console.log(`First sort then reverse: ${veggies}`);
 
 // toSorted() method as a safe way to sort an array without altering the original array
-const sortedMonths = months.toSorted()
-console.log(`Months sorted alphabetically: ${sortedMonths}`)
+const sortedMonths = months.toSorted();
+console.log(`Months sorted alphabetically: ${sortedMonths}`);
 
 // toReversed() method as a safe way to reverse an array without altering the original array
-const reversedMonths = months.toReversed()
-console.log(`Months reversed: ${reversedMonths}`)
+const reversedMonths = months.toReversed();
+console.log(`Months reversed: ${reversedMonths}`);
+
+// Numeric Sort ------------------------
+const pnt = [40, 100, 1, 5, 25, 10];
+pnt.sort(function (a, b) {
+  return a - b;
+});
+console.log(`by providing a compare function: ${pnt}`);
+
+// sort an array descending
+let desc = pnt.sort(function (a, b) {
+  return b - a;
+});
+console.log(`Descending array: ${desc}`);
+
+// Sorting an Array in Random Order
+let randomOrder = pnt.sort(function(){
+  return 0.5 - Math.random()
+})
+console.log(`Random Order: ${randomOrder}`)
