@@ -260,7 +260,19 @@ let desc = pnt.sort(function (a, b) {
 console.log(`Descending array: ${desc}`);
 
 // Sorting an Array in Random Order
-let randomOrder = pnt.sort(function(){
-  return 0.5 - Math.random()
-})
-console.log(`Random Order: ${randomOrder}`)
+let randomOrder = pnt.sort(function () {
+  return 0.5 - Math.random();
+});
+console.log(`Random Order: ${randomOrder}`);
+
+// The Fisher Yates Method ---------------
+function myFunction() {
+  for (let i = points.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    let k = points[i];
+    points[i] = points[j];
+    points[j] = k;
+  }
+  console.log(points);
+}
+
