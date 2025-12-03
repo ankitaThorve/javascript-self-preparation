@@ -183,3 +183,44 @@ console.log(rest);
 // Automatic toString() ----
 const myList = fruits.toString();
 console.log(myList);
+
+// JS Array Search Methods-----
+// The indexOf() method searches an array for an element value and returns its position.
+let position = fruits.indexOf("Mango") + 1;
+// let position = fruits.indexOf(); //Array.indexOf() returns -1 if the item is not found.
+console.log(`Mango is found in position ${position}`);
+
+// Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.
+const frtPlate = ["Apple", "Mango", "Apple", "Papaya", "Kiwi", "Apple"];
+let platePosition = frtPlate.lastIndexOf("Apple") + 1;
+console.log(platePosition);
+
+// Array.includes() allows us to check if an element is present in an array (including NaN, unlike indexOf)
+let isMango = frtPlate.includes("Mango");
+console.log(isMango);
+
+// find() method returns the value of the first array element that passes a test function
+const num = [4, 9, 12, 89, 43, 11, 8];
+let first = num.find(myFunction);
+console.log(first);
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+// findIndex() method returns the index of the first array element that passes a test function.
+let firstIndex = num.findIndex(myFunction);
+console.log(`First number over 18 has index ${firstIndex}`);
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+// findLast() method that will start from the end of an array and return the value of the first element that satisfies a condition
+const temp = [27, 28, 30, 40, 42, 35, 30];
+let high = temp.findLast((x) => x > 40);
+console.log(`The last temperature over 40 was ${high}`);
+
+// findLastIndex() method finds the index of the last element that satisfies a condition
+let pos = temp.findLastIndex((x) => x > 40);
+console.log(`The last temperature over 40 was in position ${pos}`);
+
+
