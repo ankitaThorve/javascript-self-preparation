@@ -223,4 +223,17 @@ console.log(`The last temperature over 40 was ${high}`);
 let pos = temp.findLastIndex((x) => x > 40);
 console.log(`The last temperature over 40 was in position ${pos}`);
 
+// JS Array Sort --------------------
+// sort() method sorts an array alphabetically
+frtPlate.sort();
+console.log(`Alphabetically array: ${frtPlate}`);
 
+// reverse() method reverses the elements in an array
+frtPlate.reverse();
+console.log(`Reverse arrays: ${frtPlate}`);
+
+// By combining sort() and reverse(),can sort an array in descending order
+const veggies = ["spinach","coriander","bringal","potato","capsicum"]
+veggies.sort() // First sort the array
+veggies.reverse() // Then reverse it
+console.log(`First sort then reverse: ${veggies}`)
