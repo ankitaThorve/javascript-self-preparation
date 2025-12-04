@@ -305,3 +305,23 @@ function myArrayMax(arr) {
   return Math.max.apply(null, arr);
 }
 
+// Math.min.apply(null, [1, 2, 3]) is equivalent to Math.min(1, 2, 3)
+// Math.max.apply(null, [1, 2, 3]) is equivalent to Math.max(1, 2, 3)
+
+// Sorting Object Arrays -----
+const carModel = [
+  { type: "Volvo", year: 2016 },
+  { type: "Saab", year: 2001 },
+  { type: "BMW", year: 2010 },
+];
+
+displayCars();
+carModel.sort(function (a, b) {
+  return a.year - b.year;
+});
+
+function displayCars() {
+  console.log(
+    `${carModel[0].type} ${carModel[0].year}\n${carModel[1].type} ${carModel[1].year}\n${carModel[2].type} ${carModel[2].year}`
+  );
+}
