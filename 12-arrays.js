@@ -276,3 +276,15 @@ function myFunction() {
   console.log(points);
 }
 
+// Find Min or Max with sort() --------------------
+const Min = [40, 100, 1, 5, 25, 10];
+Min.sort(function (a, b) {
+  return a - b;
+});
+console.log(`Min value is: ${Min[0]}`);
+
+const Max = [40, 100, 1, 5, 25, 10];
+Max.sort(function (a, b) {
+  return b - a;
+});
+console.log(`Max value is: ${Max[0]}`);
