@@ -288,3 +288,20 @@ Max.sort(function (a, b) {
   return b - a;
 });
 console.log(`Max value is: ${Max[0]}`);
+
+// Math.min() on an Array ---
+const mathMin = [40, 100, 1, 5, 25, 10];
+console.log(myArrayMin(mathMin));
+
+function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+}
+
+// Math.max() on an Array ---
+const mathMax = [40, 100, 1, 5, 25, 10];
+console.log(myArrayMax(mathMax));
+
+function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+}
+
