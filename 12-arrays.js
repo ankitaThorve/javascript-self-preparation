@@ -325,3 +325,4 @@ function displayCars() {
     `${carModel[0].type} ${carModel[0].year}\n${carModel[1].type} ${carModel[1].year}\n${carModel[2].type} ${carModel[2].year}`
   );
 }
+
