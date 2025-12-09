@@ -326,3 +326,13 @@ function displayCars() {
   );
 }
 
+// Js Array Iteration -----
+// forEach() method calls a function (a callback function) once for each array element
+const num1 = [45, 4, 9, 16, 25];
+let txt = "";
+num1.forEach(myfun);
+console.log(txt)
+function myfun(value, index, array) {
+  txt += value + '\n';
+}
+
