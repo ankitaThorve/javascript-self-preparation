@@ -345,3 +345,7 @@ function mapFunc(value) {
   return value * 2; //multiplies each array value by 2
 }
 
+// flatMap() method first maps all elements of an array and then creates a new array by flattening the array
+const myArray = [1, 2, 3, 4, 5, 6];
+const newArray = myArray.flatMap((x) => [x, x * 10]);
+console.log(newArray);
