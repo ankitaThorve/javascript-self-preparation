@@ -337,9 +337,11 @@ function myfun(value, index, array) {
 }
 
 // map() method creates a new array by performing a function on each array element
+// When a callback function uses only the value parameter, the index and array parameters can be omitted
 const number1 = [45, 4, 9, 16, 25];
 const number2 = number1.map(mapFunc);
 console.log(number2);
-function mapFunc(value, index, array) {
-  return value * 2;
+function mapFunc(value) {
+  return value * 2; //multiplies each array value by 2
 }
+
