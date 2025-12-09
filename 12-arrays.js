@@ -363,3 +363,10 @@ console.log(sum);
 function myReduce(total, value) {
   return total + value;
 }
+
+// can accept an initial value
+let sumInt = number1.reduce(myReduce, 100);
+console.log(sumInt);
+function myReduce(total, value) {
+  return total + value;
+}
