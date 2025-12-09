@@ -356,3 +356,10 @@ console.log(over18);
 function above18(value) {
   return value > 18;
 }
+
+// reduce() method runs a function on each array element to produce a single value
+let sum = number1.reduce(myReduce);
+console.log(sum);
+function myReduce(total, value) {
+  return total + value;
+}
