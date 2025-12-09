@@ -349,3 +349,10 @@ function mapFunc(value) {
 const myArray = [1, 2, 3, 4, 5, 6];
 const newArray = myArray.flatMap((x) => [x, x * 10]);
 console.log(newArray);
+
+// filter() method creates a new array with array elements that pass a test
+const over18 = number1.filter(above18);
+console.log(over18);
+function above18(value) {
+  return value > 18;
+}
