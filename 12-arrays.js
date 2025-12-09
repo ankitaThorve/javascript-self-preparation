@@ -331,8 +331,15 @@ function displayCars() {
 const num1 = [45, 4, 9, 16, 25];
 let txt = "";
 num1.forEach(myfun);
-console.log(txt)
+console.log(txt);
 function myfun(value, index, array) {
-  txt += value + '\n';
+  txt += value + "\n";
 }
 
+// map() method creates a new array by performing a function on each array element
+const number1 = [45, 4, 9, 16, 25];
+const number2 = number1.map(mapFunc);
+console.log(number2);
+function mapFunc(value, index, array) {
+  return value * 2;
+}
