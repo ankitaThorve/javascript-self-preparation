@@ -377,3 +377,11 @@ console.log(`right to left: ${sumRight}`);
 function reduceRight(total, value) {
   return total + value;
 }
+
+// every() method checks if all array values pass a test
+// const allNum = [23, 56,45,76,89,93,45,19]
+let allOver18 = allNum.every(all18Func);
+console.log(allOver18);
+function all18Func(value, index, array) {
+  return value > 18;
+}
