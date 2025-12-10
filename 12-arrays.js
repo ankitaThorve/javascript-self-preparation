@@ -425,3 +425,21 @@ const arr1=[1,2,3]
 const arr2=[4,5,6]
 const arr3 = [...arr1, ...arr2]
 console.log(arr3)
+
+const q1 = ["Jan", "Feb", "Mar"];
+const q2 = ["Apr", "May", "Jun"];
+const q3 = ["Jul", "Aug", "Sep"];
+const q4 = ["Oct", "Nov", "Des"];
+
+const year = [...q1, ...q2, ...q3, ...q4];
+console.log(year)
+
+// spread operator (...) can be used to copy an array
+const arr4= [...arr1]
+console.log(arr4)
+
+// used to pass arguments to a function
+let minValue = Math.min(...number1)
+let maxValue = Math.max(...number1)
+console.log(`Min = ${minValue} \nMax = ${maxValue}`)
+
