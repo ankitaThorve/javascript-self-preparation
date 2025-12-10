@@ -392,3 +392,8 @@ console.log(someOver18);
 function mySome(value, index, array) {
   return value > 18;
 }
+
+// Array.from() method returns an Array object from:Any iterable object,Any object with a length property
+let text = 'ABCDEFGH'
+const alpha = Array.from(text)
+console.log(alpha)
