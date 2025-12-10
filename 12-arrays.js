@@ -370,3 +370,10 @@ console.log(sumInt);
 function myReduce(total, value) {
   return total + value;
 }
+
+// reduceRight() works from right-to-left in the array same as reduce()
+let sumRight = number1.reduceRight(reduceRight);
+console.log(`right to left: ${sumRight}`);
+function reduceRight(total, value) {
+  return total + value;
+}
