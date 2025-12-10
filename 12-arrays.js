@@ -380,8 +380,15 @@ function reduceRight(total, value) {
 
 // every() method checks if all array values pass a test
 // const allNum = [23, 56,45,76,89,93,45,19]
-let allOver18 = allNum.every(all18Func);
+let allOver18 = number1.every(all18Func);
 console.log(allOver18);
 function all18Func(value, index, array) {
+  return value > 18;
+}
+
+// some() method checks if some array values pass a test
+let someOver18 = number1.some(mySome);
+console.log(someOver18);
+function mySome(value, index, array) {
   return value > 18;
 }
