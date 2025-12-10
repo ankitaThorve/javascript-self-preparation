@@ -394,10 +394,18 @@ function mySome(value, index, array) {
 }
 
 // Array.from() method returns an Array object from:Any iterable object,Any object with a length property
-let text = 'ABCDEFGH'
-const alpha = Array.from(text)
-console.log(alpha)
+let text = "ABCDEFGH";
+const alpha = Array.from(text);
+console.log(alpha);
 
-const myNum = [1,2,3,4]
-const myA = Array.from(myNum, (x)=> x*2)
-console.log(myA)
+const myNum = [1, 2, 3, 4];
+const myA = Array.from(myNum, (x) => x * 2);
+console.log(myA);
+
+// Array.keys() method returns an Array Iterator object with the keys of an array
+const keys = fruits.keys();
+let text1 = "";
+for (let x of keys) {
+  text1 += x + "\n";
+}
+console.log(text1)
