@@ -409,3 +409,19 @@ for (let x of keys) {
   text1 += x + "\n";
 }
 console.log(text1)
+
+// entries() method returns an Array Iterator object with key/value pairs
+const f = fruits.entries()
+for(let x of f){
+  console.log(x)
+}
+
+// Array with() method as a safe way to update elements in an array without altering the original array
+const myMonths = months.with(2,"March")
+console.log(myMonths)
+
+// JavaScript Array Spread (...)The ... operator expands an array into individual elements
+const arr1=[1,2,3]
+const arr2=[4,5,6]
+const arr3 = [...arr1, ...arr2]
+console.log(arr3)
