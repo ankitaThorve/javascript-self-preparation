@@ -397,3 +397,7 @@ function mySome(value, index, array) {
 let text = 'ABCDEFGH'
 const alpha = Array.from(text)
 console.log(alpha)
+
+const myNum = [1,2,3,4]
+const myA = Array.from(myNum, (x)=> x*2)
+console.log(myA)
